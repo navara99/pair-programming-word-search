@@ -85,4 +85,9 @@ describe("#wordSearch()", function() {
     assert.isTrue(result);
   });
 
+  it("should return false if the letters array is an empty array", function() {
+    const result = wordSearch([], 'LAUQF');
+    assert.isFalse(result);
+  });
+
 });
